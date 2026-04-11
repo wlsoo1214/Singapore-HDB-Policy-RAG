@@ -1,0 +1,4 @@
+hdb_vector_db/
+venv/
+__pycache__/
+.DS_Store
