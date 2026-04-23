@@ -20,8 +20,10 @@ graph TD
 - **Automated Policy Ingestion**: Scrapes and parses HDB eligibility pages (e.g., Singles Scheme) using BeautifulSoup.
 - **Semantic Chunking**: Utilizes logic-based recursive character splitting to preserve context and sentence integrity, avoiding the pitfalls of naive fixed-size chunking.
 - **Hybrid Search Architecture**: Combines semantic vector search (ChromaDB + Sentence Transformers) with keyword-based search (BM25) to ensure high retrieval precision for both conceptual and specific term-based queries.
-- **Local LLM Synthesis**: Connects to Ollama (Qwen 2.5) for local, privacy-focused answer generation without external API dependencies.
+- **Local LLM Synthesis**: Powered by Ollama (Qwen 2.5), the generation stage happens entirely on your local machine. This ensures data privacy and eliminates the need for expensive cloud API keys.
+- **Offline Capability**: Once the models are downloaded, the entire RAG pipeline—from retrieval to synthesis—does not require an internet connection.
 - **RAG Observability**: Integrated SQLite-based logging system to track queries, retrieved contexts, and generated answers for iterative debugging.
+
 - **Faithfulness Evaluation**: A custom evaluation harness that scores generated answers based on their adherence to the retrieved context, identifying potential hallucinations.
 
 ## Tech Stack
