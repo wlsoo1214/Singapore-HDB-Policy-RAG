@@ -116,15 +116,3 @@ if __name__ == "__main__":
 
     # Test query
     run_test_query(collection, "What is the income ceiling for singles buying a resale flat?")
-
-
-
-
-
-    
-
-    
-
-
-    
-    
